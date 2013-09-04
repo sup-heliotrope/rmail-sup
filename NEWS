@@ -1,3 +1,7 @@
+= Changes in RubyMail 1.0.1 (released 2013-09-04)
+
+- Fix encoding of regexps for ruby 1.9.1+
+
 = Changes in RubyMail 1.0.0 (released 2008-01-05)
 
 - This version differs *only* in the changes required for Ruby 1.9
