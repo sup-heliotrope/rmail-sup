@@ -139,7 +139,7 @@ end
 #
 if defined?(Gem)
   spec = Gem::Specification.new do |s|
-    s.name = 'rmail'
+    s.name = 'rmail-sup'
     s.version = PKG_VERSION + if can_release_package
                                 ''
                               else
@@ -163,11 +163,9 @@ if defined?(Gem)
 
     s.test_files = FileList['test/tc_*.rb'].to_a
 
-    s.author = "Matt Armstrong"
-    s.email = "matt@rfc20.org"
-    s.homepage = "http://www.rfc20.org/rubymail"
-
-    s.rubyforge_project = "rubymail"
+    s.author = "Sup maintainers"
+    s.email = "sup-devel@rubyforge.org"
+    s.homepage = "http://supmua.org"
   end
 
   #
