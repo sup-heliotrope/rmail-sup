@@ -7,9 +7,9 @@
 begin
   # First, we use a few ruby things...
   require 'rubygems'
-  require 'rake/gempackagetask'
+  require 'rubygems/package_task'
 end
-require 'rake/rdoctask'
+require 'rdoc/task'
 require 'rake/testtask'
 require 'shellwords'
 
@@ -171,7 +171,7 @@ if defined?(Gem)
   #
   # Use our Gem::Specification to make some package tasks.
   #
-  Rake::GemPackageTask.new(spec) do |pkg|
+  Gem::PackageTask.new(spec) do |pkg|
     pkg.need_zip = true
     pkg.need_tar = true
   end
